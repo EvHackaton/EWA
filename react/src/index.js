@@ -13,7 +13,7 @@ const style = {
   maxHeight: "80%"
 };
 
-class BarcodePicker extends Component {
+class BarcodePickerClass extends Component {
   static propTypes = {
     visible: PropTypes.bool,
     playSoundOnScan: PropTypes.bool,
@@ -74,4 +74,4 @@ class BarcodePicker extends Component {
   }
 }
 
-export default BarcodePicker;
+export default BarcodePickerClass;
