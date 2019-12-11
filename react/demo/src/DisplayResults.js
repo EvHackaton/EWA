@@ -43,7 +43,7 @@ export const DisplayResults = ({ barCode, queryResult }) => {
                 <CategoryIcon category={IdCategory} />
                 <div className="Description">
                   <h2>{itemName}</h2>
-                  <p style={{color: binColor}}>{categoryName}</p>
+                  <p className="CategoryName" style={{color: binColor}}>{categoryName}</p>
                   <p className="DescriptionText">{categoryDescription}</p>
                 </div>
               </div>
