@@ -13,6 +13,6 @@ namespace EWA.Domain
 
         string Description { get; }
 
-        int BinColorRgb { get; }
+        string BinColorRgb { get; }
     }
 }

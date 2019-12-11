@@ -16,7 +16,7 @@ namespace EWA.Domain
             _service = service;
         }
 
-        public string ItemName => _entity.ItemName;
+        public string ItemName => _entity.ItemName.Trim();
 
         public IRecyclableCategory Category => _service.GetCategory(_entity.CategoryId.Value);
     }

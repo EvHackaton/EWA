@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,17 +10,22 @@ namespace EWA.Domain
     public class RecyclableCategoryEntity : IRecyclableCategory
     {
         [Key]
+        [JsonProperty("IdCategory")]
         public int Id { get; set; }
 
         [Required]
+        [JsonProperty("categoryName")]
         public string Name { get; set; }
 
-        [Required]
+        [JsonProperty("categoryIcon")]
         public string Icon { get; set; }
 
         [Required]
+        [JsonProperty("categoryDescription")]
         public string Description { get; set; }
 
-        public int BinColorRgb { get; set; }
+        [Required]
+        [JsonProperty("binColor")]
+        public string BinColorRgb { get; set; }
     }
 }

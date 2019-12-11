@@ -11,8 +11,16 @@ namespace EWA.Tests
         public void HappyDay()
         {
             var service = new RecyclableProductService();
-            var product = service.GetProductByBarcode("123");
+            var product = service.GetProductByBarcode("5900120016378");
             Assert.NotEmpty(product.Instructions.First().ItemName);
+        }
+
+        [Fact]
+        public void TestAll()
+        {
+            var service = new RecyclableProductService();
+            var product = service.GetProductByBarcode("5900120016378");
+            Assert.NotEmpty(service.GetAllProducts().SelectMany(p => p.Instructions).Select(i => i.Category));
         }
     }
 }

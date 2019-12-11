@@ -25,9 +25,9 @@ namespace EWA.Domain
             _service = service;
         }
 
-        public string Name => _product.Name;
+        public string Name => _product.Name.Trim();
 
         public IEnumerable<IRecyclingInstruction> Instructions 
-            => _service.GetInstruction(_product.InstructionsId.Value);
+            => _product.Instructions.SelectMany(i => _service.GetInstruction(i));
     }
 }

@@ -1,0 +1,438 @@
+﻿{
+"Product": [
+{
+"idProduct":"1",
+"productName":"Milk Cardobard",
+"productCode":"5900120016378",
+"Id_Instruction0":"4",
+"Id_Instruction1":"30",
+"Id_Instruction2":"",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"2",
+"productName":"Whiteboard marker",
+"productCode":"5902884161400",
+"Id_Instruction0":"8",
+"Id_Instruction1":"",
+"Id_Instruction2":"",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"3",
+"productName":"Tealia Ceylon Black can                              ",
+"productCode":"4796004231040",
+"Id_Instruction0":"20",
+"Id_Instruction1":"15",
+"Id_Instruction2":"",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+  {
+    "idProduct": "4",
+    "productName": "CLIPPER black tea BIO ",
+    "productCode": "5021991222405",
+    "Id_Instruction0": "1",
+    "Id_Instruction1": "25",
+    "Id_Instruction2": "5",
+    "Id_Instruction3": "",
+    "Id_Instruction4": "",
+    "Id_Instruction5": ""
+  },
+{
+"idProduct":"5",
+"productName":"Nescafe Creme",
+"productCode":"7613032734220",
+"Id_Instruction0":"21",
+"Id_Instruction1":"2",
+"Id_Instruction2":"24",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"6",
+"productName":"glade freshener",
+"productCode":"5000204625271",
+"Id_Instruction0":"2",
+"Id_Instruction1":"5",
+"Id_Instruction2":"",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"7",
+"productName":"ryet led 400 lm",
+"productCode":"90305742199729",
+"Id_Instruction0":"1",
+"Id_Instruction1":"29",
+"Id_Instruction2":"",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"8",
+"productName":"olio di sansa di oliva",
+"productCode":"8008460223139",
+"Id_Instruction0":"3",
+"Id_Instruction1":"7",
+"Id_Instruction2":"28",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"9",
+"productName":"frosch cleaner",
+"productCode":"4009175170811",
+"Id_Instruction0":"2",
+"Id_Instruction1":"4",
+"Id_Instruction2":"26",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"10",
+"productName":"fruit infusion with raspberry",
+"productCode":"5901483081003",
+"Id_Instruction0":"15",
+"Id_Instruction1":"6",
+"Id_Instruction2":"",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"11",
+"productName":"dilmah tea cardboard",
+"productCode":"9312631123265",
+"Id_Instruction0":"1",
+"Id_Instruction1":"6",
+"Id_Instruction2":"15",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"12",
+"productName":"black peper",
+"productCode":"5901032041113",
+"Id_Instruction0":"21",
+"Id_Instruction1":"2",
+"Id_Instruction2":"15",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"13",
+"productName":"nestle caro original",
+"productCode":"4005500064176",
+"Id_Instruction0":"1",
+"Id_Instruction1":"2",
+"Id_Instruction2":"24",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"14",
+"productName":"microfibre cloth",
+"productCode":"5900536284224",
+"Id_Instruction0":"6",
+"Id_Instruction1":"18",
+"Id_Instruction2":"27",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"15",
+"productName":"frosch dishwashing lotion",
+"productCode":"4009175148117",
+"Id_Instruction0":"2",
+"Id_Instruction1":"4",
+"Id_Instruction2":"26",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+},
+{
+"idProduct":"16",
+"productName":"lipton green tea cardboard",
+"productCode":"8712100784620",
+"Id_Instruction0":"1",
+"Id_Instruction1":"25",
+"Id_Instruction2":"5",
+"Id_Instruction3":"",
+"Id_Instruction4":"",
+"Id_Instruction5":""
+}
+],
+"Instruction": [
+{
+"instructionId":"1",
+"itemName":"paper box",
+"categoryId":"1"
+},
+{
+"instructionId":"2",
+"itemName":"plastic cup",
+"categoryId":"2"
+},
+{
+"instructionId":"3",
+"itemName":"glass bottle",
+"categoryId":"4"
+},
+{
+"instructionId":"4",
+"itemName":"plastic bottle",
+"categoryId":"2"
+},
+{
+"instructionId":"5",
+"itemName":"metal box",
+"categoryId":"2"
+},
+{
+"instructionId":"6",
+"itemName":"plastic bag",
+"categoryId":"2"
+},
+{
+"instructionId":"7",
+"itemName":"metal cup",
+"categoryId":"2"
+},
+{
+"instructionId":"8",
+"itemName":"paper bag",
+"categoryId":"1"
+},
+{
+"instructionId":"9",
+"itemName":"branch",
+"categoryId":"5"
+},
+{
+"instructionId":"10",
+"itemName":"grass",
+"categoryId":"5"
+},
+{
+"instructionId":"11",
+"itemName":"bark",
+"categoryId":"5"
+},
+{
+"instructionId":"12",
+"itemName":"wooden box",
+"categoryId":"5"
+},
+{
+"instructionId":"13",
+"itemName":"battery",
+"categoryId":"10"
+},
+{
+"instructionId":"14",
+"itemName":"tin can",
+"categoryId":"2"
+},
+{
+"instructionId":"15",
+"itemName":"herbs",
+"categoryId":"5"
+},
+{
+"instructionId":"16",
+"itemName":"toys",
+"categoryId":"2"
+},
+{
+"instructionId":"17",
+"itemName":"food",
+"categoryId":"3"
+},
+{
+"instructionId":"18",
+"itemName":"microfiber",
+"categoryId":"14"
+},
+{
+"instructionId":"19",
+"itemName":"bloom",
+"categoryId":"5"
+},
+{
+"instructionId":"20",
+"itemName":"metal can",
+"categoryId":"2"
+},
+{
+"instructionId":"21",
+"itemName":"glass jar",
+"categoryId":"4"
+},
+{
+"instructionId":"22",
+"itemName":"leaves",
+"categoryId":"5"
+},
+{
+"instructionId":"23",
+"itemName":"rubber",
+"categoryId":"2"
+},
+{
+"instructionId":"24",
+"itemName":"coffe",
+"categoryId":"5"
+},
+{
+"instructionId":"25",
+"itemName":"paper bag",
+"categoryId":"1"
+},
+{
+"instructionId":"26",
+"itemName":"soap",
+"categoryId":"3"
+},
+{
+"instructionId":"27",
+"itemName":"cardboard",
+"categoryId":"1"
+},
+{
+"instructionId":"28",
+"itemName":"oil",
+"categoryId":"5"
+},
+{
+"instructionId":"29",
+"itemName":"bulb",
+"categoryId":"11"
+},
+{
+"instructionId":"30",
+"itemName":"cardboard with aluminium
+",
+"categoryId":"2"
+},
+{
+"instructionId":"31",
+"itemName":"marker inside",
+"categoryId":"8"
+}
+],
+"Category": [
+{
+"IdCategory":"1",
+"categoryName":"Paper",
+"categoryIcon":"",
+"categoryDescription":"Clean packaging made from paper and cardboard, newspapers, leaflets ",
+"binColor":"Blue"
+},
+{
+"IdCategory":"2",
+"categoryName":"Metals and manmade materials",
+"categoryIcon":"",
+"categoryDescription":"TODO",
+"binColor":"Yellow"
+},
+{
+"IdCategory":"3",
+"categoryName":"Mixed waste",
+"categoryIcon":"",
+"categoryDescription":"TODO",
+"binColor":"Black"
+},
+{
+"IdCategory":"4",
+"categoryName":"Glass",
+"categoryIcon":"",
+"categoryDescription":"TODO",
+"binColor":"Green"
+},
+{
+"IdCategory":"5",
+"categoryName":"Bio",
+"categoryIcon":"",
+"categoryDescription":"TODO",
+"binColor":"Brown"
+},
+{
+"IdCategory":"6",
+"categoryName":"High volume garbage",
+"categoryIcon":"",
+"categoryDescription":"TODO",
+"binColor":"Orange"
+},
+{
+"IdCategory":"7",
+"categoryName":"Green waste",
+"categoryIcon":"",
+"categoryDescription":"TODO",
+"binColor":"Gray"
+},
+{
+"IdCategory":"8",
+"categoryName":"Other municipal solid waste",
+"categoryIcon":"",
+"categoryDescription":"TODO",
+"binColor":"Dark green"
+},
+{
+"IdCategory":"9",
+"categoryName":"Overdue medial waste",
+"categoryIcon":"",
+"categoryDescription":"przeterminowane lekarstwa i termometry rtęciowe musisz dostarczyć do jednej z wyznaczonych aptek na terenie miasta lub do Punktów Selektywnego Zbierania Odpadów Komunalnych (PSZOK).",
+"binColor":"Red"
+},
+{
+"IdCategory":"10",
+"categoryName":"Batteries",
+"categoryIcon":"",
+"categoryDescription":"należy wyrzucić do specjalnie oznakowanych pojemników w sklepach, w których kupujemy nowe baterie lub w Punktach Selektywnego Zbierania Odpadów Komunalnych (PSZOK).",
+"binColor":"Black"
+},
+  {
+    "IdCategory": "11",
+    "categoryName": "Electronical waste",
+    "categoryIcon": "",
+    "categoryDescription": "zbiórka prowadzona będzie na terenie poszczególnych osiedli. Odpady wielkogabarytowe wrzucamy do kontenerów, które rozstawione zostaną w miejscach ogólnodostępnych lub dostarczamy do Punktów Selektywnego Zbierania Odpadów Komunalnych (PSZOK).",
+    "binColor": "Black"
+  },
+  {
+    "IdCategory": "12",
+    "categoryName": "Construction and renovation waste",
+    "categoryIcon": "",
+    "categoryDescription": "dostarczamy do Punktów Selektywnego Zbierania Odpadów Komunalnych (PSZOK).",
+    "binColor": "Black"
+  },
+  {
+    "IdCategory": "13",
+    "categoryName": "Tires",
+    "categoryIcon": "",
+    "categoryDescription": "Dostarczamy do Punktów Selektywnego Zbierania Odpadów Komunalnych (PSZOK).",
+    "binColor": "Black"
+  },
+  {
+    "IdCategory": "14",
+    "categoryName": "Used clothes and textiles",
+    "categoryIcon": "",
+    "categoryDescription": "Dostarczamy do Punktów Selektywnego Zbierania Odpadów Komunalnych (PSZOK).",
+    "binColor": "Black"
+  }
+]
+}
