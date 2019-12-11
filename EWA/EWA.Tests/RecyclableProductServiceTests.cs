@@ -1,5 +1,6 @@
 using EWA.Domain;
 using System;
+using System.Linq;
 using Xunit;
 
 namespace EWA.Tests
@@ -11,7 +12,7 @@ namespace EWA.Tests
         {
             var service = new RecyclableProductService();
             var product = service.GetProductByBarcode("123");
-            Assert.NotEmpty(product.Instructions);
+            Assert.NotEmpty(product.Instructions.First().ItemName);
         }
     }
 }

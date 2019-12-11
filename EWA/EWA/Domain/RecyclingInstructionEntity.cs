@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace EWA.Domain
 {
-    public class RecyclingInstructionEntity : IRecyclingInstruction
+    public class RecyclingInstructionEntity
     {
         public int InstructionId { get; set; }
 
         [Required]
         public string ItemName { get; set; }
 
-        public RecyclableMaterial Material { get; set; }
+        [Required]
+        public int? CategoryId { get; set; }
     }
 }

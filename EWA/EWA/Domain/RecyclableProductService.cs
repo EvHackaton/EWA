@@ -9,25 +9,38 @@ namespace EWA.Domain
     {
         IRecyclableProduct GetProductByBarcode(string code);
 
-        IEnumerable<RecyclingInstructionEntity> GetInstruction(int instructionId);
+        IEnumerable<IRecyclingInstruction> GetInstruction(int instructionId);
+
+        IRecyclableCategory GetCategory(int categoryId);
     }
 
     public class RecyclableProductService : IRecyclableProductService
     {
-        public IEnumerable<RecyclingInstructionEntity> GetInstruction(int instructionId)
+        public IEnumerable<IRecyclingInstruction> GetInstruction(int instructionId)
         {
-            yield return new RecyclingInstructionEntity
+            yield return new RecyclingInstruction(new RecyclingInstructionEntity
             {
                 InstructionId = instructionId,
                 ItemName = "package",
-                Material = RecyclableMaterial.Paper
-            };
+                CategoryId = 1
+            }, this);
 
-            yield return new RecyclingInstructionEntity
+            yield return new RecyclingInstruction(new RecyclingInstructionEntity
             {
                 InstructionId = instructionId,
                 ItemName = "tea leaves",
-                Material = RecyclableMaterial.Bio
+                CategoryId = 2
+            }, this);
+        }
+
+        public IRecyclableCategory GetCategory(int categoryId)
+        {
+            return new RecyclableCategoryEntity
+            {
+                Id = 1,
+                Name = "Glass",
+                Description = "Some description",
+                BinColorRgb = 0
             };
         }
 
@@ -40,5 +53,6 @@ namespace EWA.Domain
                 Name = "tea"
             }, this);
         }
+
     }
 }

@@ -9,6 +9,6 @@ namespace EWA.Domain
     {
         string ItemName { get; }
 
-        RecyclableMaterial Material { get; }
+        IRecyclableCategory Category { get; }
     }
 }
