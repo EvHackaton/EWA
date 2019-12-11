@@ -1,5 +1,6 @@
 import React, { Component, Fragment, useState } from "react";
 import { render } from "react-dom";
+import axios from 'axios';
 import { ScanSettings, Barcode } from "scandit-sdk";
 
 import BarcodePicker from "../../src";
@@ -7,6 +8,7 @@ import { DisplayResults } from './DisplayResults';
 
 const Demo = () => {
   const [barCode, setBarCode] = useState('');
+  const [queryResult, setQueryResult] = useState(null);
 
   return (
     <Fragment>
@@ -20,9 +22,13 @@ const Demo = () => {
               codeDuplicateFilter: 1000
             })
           }
-          onScan={scanResult => {
-            console.log(scanResult); // eslint-disable-line
-            setBarCode(scanResult.barcodes[0].data);
+          onScan={async scanResult => {
+            const parsedBarCode = scanResult.barcodes[0].data;
+            setBarCode(parsedBarCode);
+            const result = await axios(
+              `https://ewaevhackaton.azurewebsites.net/api/barcode/${parsedBarCode}`,
+            );
+            setQueryResult(result.data);
           }}
           onError={error => {
             console.error(error.message);
@@ -30,7 +36,7 @@ const Demo = () => {
         />
       )}
       {barCode && (
-        <DisplayResults barCode={barCode} />
+        <DisplayResults barCode={barCode} queryResult={queryResult} />
       )}
       {barCode && (
         <button onClick={() => setBarCode('')}>Scan again</button>
