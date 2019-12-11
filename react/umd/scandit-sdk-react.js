@@ -179,21 +179,16 @@ Object(scandit_sdk__WEBPACK_IMPORTED_MODULE_2__["configure"])("AQwtuhhpBl9MFixs4
 });
 
 var style = {
-  position: "absolute",
-  top: "0",
-  bottom: "0",
-  left: "0",
-  right: "0",
   margin: "auto",
   maxWidth: "1280px",
   maxHeight: "80%"
 };
 
-var BarcodePicker = (_temp = _class = function (_Component) {
-  _inherits(BarcodePicker, _Component);
+var BarcodePickerClass = (_temp = _class = function (_Component) {
+  _inherits(BarcodePickerClass, _Component);
 
-  function BarcodePicker(props) {
-    _classCallCheck(this, BarcodePicker);
+  function BarcodePickerClass(props) {
+    _classCallCheck(this, BarcodePickerClass);
 
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
@@ -201,7 +196,7 @@ var BarcodePicker = (_temp = _class = function (_Component) {
     return _this;
   }
 
-  BarcodePicker.prototype.componentDidMount = function componentDidMount() {
+  BarcodePickerClass.prototype.componentDidMount = function componentDidMount() {
     var _this2 = this;
 
     scandit_sdk__WEBPACK_IMPORTED_MODULE_2__["BarcodePicker"].create(this.ref.current, this.props).then(function (barcodePicker) {
@@ -215,13 +210,13 @@ var BarcodePicker = (_temp = _class = function (_Component) {
     });
   };
 
-  BarcodePicker.prototype.componentWillUnmount = function componentWillUnmount() {
+  BarcodePickerClass.prototype.componentWillUnmount = function componentWillUnmount() {
     if (this.barcodePicker != null) {
       this.barcodePicker.destroy();
     }
   };
 
-  BarcodePicker.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+  BarcodePickerClass.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
     // These are just some examples of how to react to some possible property changes
 
     if (JSON.stringify(prevProps.scanSettings) !== JSON.stringify(this.props.scanSettings)) {
@@ -233,11 +228,11 @@ var BarcodePicker = (_temp = _class = function (_Component) {
     }
   };
 
-  BarcodePicker.prototype.render = function render() {
+  BarcodePickerClass.prototype.render = function render() {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { ref: this.ref, style: style });
   };
 
-  return BarcodePicker;
+  return BarcodePickerClass;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]), _class.propTypes = {
   visible: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   playSoundOnScan: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
@@ -259,7 +254,7 @@ var BarcodePicker = (_temp = _class = function (_Component) {
 }, _temp);
 
 
-/* harmony default export */ __webpack_exports__["default"] = (BarcodePicker);
+/* harmony default export */ __webpack_exports__["default"] = (BarcodePickerClass);
 
 /***/ }),
 /* 5 */

@@ -26,21 +26,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 });
 
 var style = {
-  position: "absolute",
-  top: "0",
-  bottom: "0",
-  left: "0",
-  right: "0",
   margin: "auto",
   maxWidth: "1280px",
   maxHeight: "80%"
 };
 
-var BarcodePicker = function (_Component) {
-  _inherits(BarcodePicker, _Component);
+var BarcodePickerClass = function (_Component) {
+  _inherits(BarcodePickerClass, _Component);
 
-  function BarcodePicker(props) {
-    _classCallCheck(this, BarcodePicker);
+  function BarcodePickerClass(props) {
+    _classCallCheck(this, BarcodePickerClass);
 
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
@@ -48,7 +43,7 @@ var BarcodePicker = function (_Component) {
     return _this;
   }
 
-  BarcodePicker.prototype.componentDidMount = function componentDidMount() {
+  BarcodePickerClass.prototype.componentDidMount = function componentDidMount() {
     var _this2 = this;
 
     _scanditSdk.BarcodePicker.create(this.ref.current, this.props).then(function (barcodePicker) {
@@ -62,13 +57,13 @@ var BarcodePicker = function (_Component) {
     });
   };
 
-  BarcodePicker.prototype.componentWillUnmount = function componentWillUnmount() {
+  BarcodePickerClass.prototype.componentWillUnmount = function componentWillUnmount() {
     if (this.barcodePicker != null) {
       this.barcodePicker.destroy();
     }
   };
 
-  BarcodePicker.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+  BarcodePickerClass.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
     // These are just some examples of how to react to some possible property changes
 
     if (JSON.stringify(prevProps.scanSettings) !== JSON.stringify(this.props.scanSettings)) {
@@ -80,14 +75,14 @@ var BarcodePicker = function (_Component) {
     }
   };
 
-  BarcodePicker.prototype.render = function render() {
+  BarcodePickerClass.prototype.render = function render() {
     return _react2.default.createElement("div", { ref: this.ref, style: style });
   };
 
-  return BarcodePicker;
+  return BarcodePickerClass;
 }(_react.Component);
 
-BarcodePicker.propTypes = process.env.NODE_ENV !== "production" ? {
+BarcodePickerClass.propTypes = process.env.NODE_ENV !== "production" ? {
   visible: _propTypes2.default.bool,
   playSoundOnScan: _propTypes2.default.bool,
   vibrateOnScan: _propTypes2.default.bool,
@@ -106,5 +101,5 @@ BarcodePicker.propTypes = process.env.NODE_ENV !== "production" ? {
   onScan: _propTypes2.default.func,
   onError: _propTypes2.default.func
 } : {};
-exports.default = BarcodePicker;
+exports.default = BarcodePickerClass;
 module.exports = exports["default"];
