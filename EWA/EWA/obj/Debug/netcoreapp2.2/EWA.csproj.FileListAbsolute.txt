@@ -1,0 +1,14 @@
+C:\src\EWA\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.deps.json
+C:\src\EWA\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.runtimeconfig.json
+C:\src\EWA\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.runtimeconfig.dev.json
+C:\src\EWA\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.dll
+C:\src\EWA\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.pdb
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.csprojAssemblyReference.cache
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.csproj.CoreCompileInputs.cache
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.RazorAssemblyInfo.cache
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.RazorAssemblyInfo.cs
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.AssemblyInfoInputs.cache
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.AssemblyInfo.cs
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.RazorTargetAssemblyInfo.cache
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.dll
+C:\src\EWA\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.pdb

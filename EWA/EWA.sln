@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWA", "EWA\EWA.csproj", "{B6C56717-E233-4F2F-8F1E-FD5501E648AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWA", "EWA\EWA.csproj", "{B6C56717-E233-4F2F-8F1E-FD5501E648AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWA.Tests", "EWA.Tests\EWA.Tests.csproj", "{785CE7F3-266E-4320-B2A7-71B1C5497959}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B6C56717-E233-4F2F-8F1E-FD5501E648AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C56717-E233-4F2F-8F1E-FD5501E648AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6C56717-E233-4F2F-8F1E-FD5501E648AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785CE7F3-266E-4320-B2A7-71B1C5497959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785CE7F3-266E-4320-B2A7-71B1C5497959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785CE7F3-266E-4320-B2A7-71B1C5497959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785CE7F3-266E-4320-B2A7-71B1C5497959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
