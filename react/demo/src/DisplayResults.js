@@ -2,22 +2,31 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
 export const DisplayResults = ({ barCode, queryResult }) => {
-  if (!queryResult) return <span>Waiting for response...</span>
+  if (!queryResult) return <div>Waiting for response...</div>
   else {
     const { name, instructions } = queryResult;
     return (
       <Fragment>
         {queryResult && (
-          <div>
+          <div className="Results">
             <h1>{name}</h1>
+            <p>Barcode number: {barCode}</p>
             <ul>
-            {instructions.map(instruction => (
-              <li kay={instruction.instuctionId}>
-                {instruction.itemName} (material type: {instruction.material})
+            {instructions.map(({
+              itemName,
+              category: {
+                binColorRgb,
+                description,
+                name: categoryName,
+              },
+            }, idx) => (
+              <li key={`instruction-${idx}`}>
+                <p>{itemName}</p>
+                <p>{categoryName}</p>
+                <p>{description}</p>
               </li>
             ))}
             </ul>
-            <span>Barcode number: {barCode}</span>
           </div>
         )}
       </Fragment>
