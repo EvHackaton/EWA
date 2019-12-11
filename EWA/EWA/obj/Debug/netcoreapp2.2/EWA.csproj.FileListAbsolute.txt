@@ -1,0 +1,14 @@
+C:\STORAGE\Projects\Hackaton\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.deps.json
+C:\STORAGE\Projects\Hackaton\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.runtimeconfig.json
+C:\STORAGE\Projects\Hackaton\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.runtimeconfig.dev.json
+C:\STORAGE\Projects\Hackaton\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.dll
+C:\STORAGE\Projects\Hackaton\EWA\EWA\bin\Debug\netcoreapp2.2\EWA.pdb
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.csprojAssemblyReference.cache
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.csproj.CoreCompileInputs.cache
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.RazorAssemblyInfo.cache
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.RazorAssemblyInfo.cs
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.AssemblyInfoInputs.cache
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.AssemblyInfo.cs
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.RazorTargetAssemblyInfo.cache
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.dll
+C:\STORAGE\Projects\Hackaton\EWA\EWA\obj\Debug\netcoreapp2.2\EWA.pdb
