@@ -8,7 +8,7 @@ export const DisplayResults = ({ barCode, queryResult }) => {
     return (
       <Fragment>
         {queryResult && (
-          <div>
+          <div className="Results">
             <h1>{name}</h1>
             <ul>
             {instructions.map(instruction => (

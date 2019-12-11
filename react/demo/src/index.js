@@ -1,17 +1,19 @@
-import React, { Component, Fragment, useState } from "react";
+import React, { Component, useState } from "react";
 import { render } from "react-dom";
 import axios from 'axios';
 import { ScanSettings, Barcode } from "scandit-sdk";
 
 import BarcodePicker from "../../src";
 import { DisplayResults } from './DisplayResults';
+import ecovadisLogo from './images/ecovadis.svg';
 
 const Demo = () => {
   const [barCode, setBarCode] = useState('');
   const [queryResult, setQueryResult] = useState(null);
 
   return (
-    <Fragment>
+    <div className="Container">
+      <img className="Logo" src={ecovadisLogo} />
       {!barCode && (
         <BarcodePicker
           playSoundOnScan={true}
@@ -41,7 +43,7 @@ const Demo = () => {
       {barCode && (
         <button onClick={() => setBarCode('')}>Scan again</button>
       )}
-    </Fragment>
+    </div>
   );
 }
 
