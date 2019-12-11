@@ -8,11 +8,6 @@ configure("AQwtuhhpBl9MFixs4yOOt7UdpWJKRNo1KVls7r57JKx5QSYf0XsgZyR3TEnwRWxZJHSI9
 });
 
 const style = {
-  position: "absolute",
-  top: "0",
-  bottom: "0",
-  left: "0",
-  right: "0",
   margin: "auto",
   maxWidth: "1280px",
   maxHeight: "80%"

@@ -8,8 +8,8 @@ import Paper from './images/paper.png';
 
 const CategoryIcon = ({ category }) => {
   const imagesMapping = {
-    1: Glass,
     2: MetalPlastic,
+    4: Glass,
   };
 
   const categoryImage = imagesMapping[category] ? imagesMapping[category] : '';
