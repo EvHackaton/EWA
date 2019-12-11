@@ -5,7 +5,8 @@ import { ScanSettings, Barcode } from "scandit-sdk";
 
 import BarcodePicker from "../../src";
 import { DisplayResults } from './DisplayResults';
-import ecovadisLogo from './images/ecovadis.svg';
+import ecovadisLogo from './images/ecovadis.png';
+import ewaLogo from './images/ewa.png';
 
 const Demo = () => {
   const [barCode, setBarCode] = useState('');
@@ -13,7 +14,10 @@ const Demo = () => {
 
   return (
     <div className="Container">
-      <img className="Logo" src={ecovadisLogo} />
+      <div className="Header">
+        <img className="Logo" src={ecovadisLogo} />
+        <img className="Ewa" src={ewaLogo} />
+      </div>
       {!barCode && (
         <BarcodePicker
           playSoundOnScan={true}
