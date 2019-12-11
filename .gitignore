@@ -6,3 +6,4 @@
 obj
 bin
 /react/node_modules
+.idea
