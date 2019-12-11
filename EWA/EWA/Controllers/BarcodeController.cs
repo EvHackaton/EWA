@@ -7,14 +7,30 @@ namespace EWA.Controllers
     public class BarcodeController : ControllerBase
     {
         private readonly IRecyclableProductService _recyclableProductService;
+
         public BarcodeController(IRecyclableProductService recyclableProductService)
         {
             _recyclableProductService = recyclableProductService;
         }
+
         [HttpGet("{id}")]
-        public JsonResult Get(int id)
+        public JsonResult Get(string id)
         {
-            return new JsonResult(_recyclableProductService.GetProductByBarcode("123"));
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                Response.StatusCode = 400;
+                return new JsonResult(null);
+            }
+
+            var response = _recyclableProductService.GetProductByBarcode(id.Trim());
+
+            if (response == null)
+            {
+                Response.StatusCode = 404;
+                return new JsonResult(null);
+            }
+
+            return new JsonResult(response);
         }
     }
 }
