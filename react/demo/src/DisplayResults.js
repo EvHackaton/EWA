@@ -1,6 +1,24 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
+import Glass from './images/glass.png';
+import MetalPlastic from './images/metal-and-plastic.png';
+import Mixed from './images/mixed.png';
+import Paper from './images/paper.png';
+
+const CategoryIcon = ({ category }) => {
+  const imagesMapping = {
+    1: Glass,
+    2: MetalPlastic,
+  };
+
+  const categoryImage = imagesMapping[category] ? imagesMapping[category] : '';
+
+  return (
+    <img className="CategoryImage" src={categoryImage} />
+  );
+};
+
 export const DisplayResults = ({ barCode, queryResult }) => {
   if (!queryResult) return <div>Waiting for response...</div>
   else {
@@ -11,22 +29,26 @@ export const DisplayResults = ({ barCode, queryResult }) => {
           <div className="Results">
             <h1>{name}</h1>
             <p>Barcode number: {barCode}</p>
-            <ul>
+            <div className="List">
             {instructions.map(({
               itemName,
               category: {
-                binColorRgb,
-                description,
-                name: categoryName,
+                binColor,
+                IdCategory,
+                categoryDescription,
+                categoryName,
               },
             }, idx) => (
-              <li key={`instruction-${idx}`}>
-                <p>{itemName}</p>
-                <p>{categoryName}</p>
-                <p>{description}</p>
-              </li>
+              <div className="ListItem" key={`instruction-${idx}`}>
+                <CategoryIcon category={IdCategory} />
+                <div className="Description">
+                  <h2>{itemName}</h2>
+                  <p style={{color: binColor}}>{categoryName}</p>
+                  <p className="DescriptionText">{categoryDescription}</p>
+                </div>
+              </div>
             ))}
-            </ul>
+            </div>
           </div>
         )}
       </Fragment>
