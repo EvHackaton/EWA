@@ -1,15 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Linq;
+using EWA.Domain;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EWA.Controllers
 {
     [Route("api/[controller]")]
     public class BarcodeController : ControllerBase
     {
-        
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public JsonResult Get(int id)
         {
-            return "Product with ID: " + id;
+            var service = new RecyclableProductService();
+            var result = service.GetProductByBarcode("123");
+            return new JsonResult(new {result.Name, Instructions = result.Instructions.ToList()});
         }
     }
 }
