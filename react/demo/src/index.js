@@ -7,7 +7,7 @@ import { Button, ButtonToolbar } from 'react-bootstrap';
 import BarcodePicker from "../../src";
 import { DisplayResults } from './DisplayResults';
 import ecovadisLogo from './images/Ecovadis_logo.png';
-import ewaLogo from './images/ewa_logo.png';
+import ewaLogo from './images/ewa_logo2.png';
 
 const Demo = () => {
   const [barCode, setBarCode] = useState('');
@@ -18,7 +18,6 @@ const Demo = () => {
     <div className="Container">
       <div className="Header">
         <img className="Ewa" src={ewaLogo} />
-        <img className="Logo" src={ecovadisLogo} />
       </div>
       {!barCode && (
         <BarcodePicker

@@ -9,6 +9,8 @@ namespace EWA.Domain
     {
         string Name { get; }
 
+        string Code { get; }
+
         IEnumerable<IRecyclingInstruction> Instructions { get; }
     }
 
@@ -26,6 +28,8 @@ namespace EWA.Domain
         }
 
         public string Name => _product.Name.Trim();
+
+        public string Code => _product.Code.Trim();
 
         public IEnumerable<IRecyclingInstruction> Instructions 
             => _product.Instructions.SelectMany(i => _service.GetInstruction(i));

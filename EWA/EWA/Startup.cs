@@ -45,7 +45,8 @@ namespace EWA
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();            
             app.UseMvc();
         }
     }

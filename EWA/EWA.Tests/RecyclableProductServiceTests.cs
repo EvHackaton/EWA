@@ -16,6 +16,15 @@ namespace EWA.Tests
         }
 
         [Fact]
+        public void FindMilk()
+        {
+            var service = new RecyclableProductService();
+            var product = service.FindProduct("milk");
+            Assert.NotEmpty(product.Instructions.First().ItemName);
+            Assert.Equal("5900120016378", product.Code);
+        }
+
+        [Fact]
         public void TestAll()
         {
             var service = new RecyclableProductService();

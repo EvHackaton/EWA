@@ -22,7 +22,7 @@ namespace EWA.Controllers
                 return new JsonResult(null);
             }
 
-            var response = _recyclableProductService.GetProductByBarcode(name.Trim());
+            var response = _recyclableProductService.FindProduct(name.Trim());
 
             if (response == null)
             {

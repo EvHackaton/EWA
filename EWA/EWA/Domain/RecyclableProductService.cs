@@ -9,6 +9,8 @@ namespace EWA.Domain
     {
         IRecyclableProduct GetProductByBarcode(string code);
 
+        IRecyclableProduct FindProduct(string name);
+
         IEnumerable<IRecyclingInstruction> GetInstruction(int instructionId);
 
         IRecyclableCategory GetCategory(int categoryId);
@@ -41,6 +43,19 @@ namespace EWA.Domain
         public IRecyclableProduct GetProductByBarcode(string code)
         {
             var entity = _products.Values.First(p => p.Code == code);
+            if (entity == null)
+                return null;
+            else
+                return new RecyclableProduct(entity, this);
+        }
+
+        public IRecyclableProduct FindProduct(string name)
+        {
+            if (String.IsNullOrWhiteSpace(name))
+                return null;
+
+            string trimName = name.ToLowerInvariant().Trim();
+            var entity = _products.Values.First(p => p.Code.ToLowerInvariant().Contains(name) || p.Name.ToLowerInvariant().Contains(name));
             if (entity == null)
                 return null;
             else

@@ -60,7 +60,7 @@
       "productName":"Glade freshener",
       "productCode":"5000204625271",
       "Id_Instruction0":"2",
-      "Id_Instruction1":"5",
+      "Id_Instruction1":"32",
       "Id_Instruction2":"",
       "Id_Instruction3":"",
       "Id_Instruction4":"",
@@ -329,8 +329,13 @@
       "categoryId":"2"
     },
     {
-      "instructionId":"31",
-      "itemName":"marker inside",
+      "instructionId": "31",
+      "itemName": "marker inside",
+      "categoryId": "8"
+    },
+    {
+      "instructionId": "32",
+      "itemName":"aerosol can",
       "categoryId":"8"
     }
   ],
