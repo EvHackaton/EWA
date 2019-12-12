@@ -41,8 +41,9 @@ const CategoryIcon = ({ categoryIcon }) => {
   );
 };
 
-export const DisplayResults = ({ barCode, queryResult }) => {
+export const DisplayResults = ({ barCode, queryResult, isError }) => {
   if (!queryResult) return <div>Waiting for response...</div>
+  if (isError) return <div>Product unknown...</div>
   else {
     const { name, instructions } = queryResult;
     return (
@@ -82,9 +83,11 @@ export const DisplayResults = ({ barCode, queryResult }) => {
 DisplayResults.propTypes = {
   barCode: PropTypes.string.isRequired,
   queryResult: PropTypes.object,
+  isError: PropTypes.bool,
 };
 
 DisplayResults.defaultProps = {
   queryResult: null,
+  isError: false,
 };
 

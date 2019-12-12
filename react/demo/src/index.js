@@ -11,12 +11,13 @@ import ewaLogo from './images/ewa_logo.png';
 const Demo = () => {
   const [barCode, setBarCode] = useState('');
   const [queryResult, setQueryResult] = useState(null);
+  const [isError, setIsError] = useState(false);
 
   return (
     <div className="Container">
       <div className="Header">
         <img className="Ewa" src={ewaLogo} />
-        <img className="Logo" src={ecovadisLogo} />        
+        <img className="Logo" src={ecovadisLogo} />
       </div>
       {!barCode && (
         <BarcodePicker
@@ -31,18 +32,24 @@ const Demo = () => {
           onScan={async scanResult => {
             const parsedBarCode = scanResult.barcodes[0].data;
             setBarCode(parsedBarCode);
-            const result = await axios(
+            axios(
               `https://ewaevhackaton.azurewebsites.net/api/barcode/${parsedBarCode}`,
+            ).then(
+                response => setQueryResult(response.data),
+                error => setIsError(true),
             );
-            setQueryResult(result.data);
           }}
           onError={error => {
-            console.error(error.message);
+            setIsError(true);
           }}
         />
       )}
       {barCode && (
-        <DisplayResults barCode={barCode} queryResult={queryResult} />
+        <DisplayResults
+          barCode={barCode}
+          queryResult={queryResult}
+          isError={isError}
+        />
       )}
       {barCode && (
         <button onClick={() => setBarCode('')}>Scan again</button>
