@@ -57,12 +57,12 @@ export const DisplayResults = ({ barCode, queryResult, isError }) => {
       <Fragment>
         {queryResult && (
           <div className="Results">
-            <div class="ProductHead">
+            <div className="ProductHead">
               <img src={`https://ewa20191211060235.azurewebsites.net/products/${barCode}.jpg`} />
-              <p class="ProductName">
-                <h1>{name}</h1>
+              <div className="ProductName">
+                <p>{name}</p>
                 <p>Barcode number: {barCode}</p>
-              </p>
+              </div>
             </div>
             <div className="List">
             {instructions.map(({
