@@ -15,8 +15,7 @@ configure("AaINbzFpL4VFJPWcXizDeBwrfLlcDxzumXroNS923afPeTEl8gubo6hzPOrtf6F/GghG4
 
 var style = {
   margin: "auto",
-  maxWidth: "1280px",
-  maxHeight: "80%"
+  width: "100%"
 };
 
 var BarcodePickerClass = function (_Component) {

@@ -180,8 +180,7 @@ Object(scandit_sdk__WEBPACK_IMPORTED_MODULE_2__["configure"])("AaINbzFpL4VFJPWcX
 
 var style = {
   margin: "auto",
-  maxWidth: "1280px",
-  maxHeight: "80%"
+  width: "100%"
 };
 
 var BarcodePickerClass = (_temp = _class = function (_Component) {

@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import { render } from "react-dom";
 import axios from 'axios';
 import { ScanSettings, Barcode } from "scandit-sdk";
+import { Button, ButtonToolbar } from 'react-bootstrap';
 
 import BarcodePicker from "../../src";
 import { DisplayResults } from './DisplayResults';
@@ -55,7 +56,16 @@ const Demo = () => {
         />
       )}
       {barCode && (
-        <button onClick={() => setBarCode('')}>Scan again</button>
+        <ButtonToolbar>
+          <Button
+            className="ActionButton"
+            variant="primary"
+            size="lg"
+            onClick={() => setBarCode('')}
+          >
+            Scan again
+          </Button>
+        </ButtonToolbar>
       )}
     </div>
   );

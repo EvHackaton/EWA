@@ -27,8 +27,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var style = {
   margin: "auto",
-  maxWidth: "1280px",
-  maxHeight: "80%"
+  width: "100%"
 };
 
 var BarcodePickerClass = function (_Component) {

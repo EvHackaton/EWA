@@ -9,8 +9,7 @@ configure("AaINbzFpL4VFJPWcXizDeBwrfLlcDxzumXroNS923afPeTEl8gubo6hzPOrtf6F/GghG4
 
 const style = {
   margin: "auto",
-  maxWidth: "1280px",
-  maxHeight: "80%"
+  width: "100%",
 };
 
 class BarcodePickerClass extends Component {
