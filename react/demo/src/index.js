@@ -15,7 +15,8 @@ const Demo = () => {
   const [isError, setIsError] = useState(false);
 
   const handleSearch = event => {
-    const searchText = event.target.form[0].value;
+    event.preventDefault();
+    const searchText = event.target.form ? event.target.form[0].value : event.target[0].value;
 
     //https://ewa20191211060235.azurewebsites.net/api/name/milk
 
@@ -36,7 +37,7 @@ const Demo = () => {
       <div className="Header">
         <img className="Ewa" src={ewaLogo} />
       </div>
-      <form>
+      <form onSubmit={handleSearch}>
         <InputGroup className="mb-3">
           <FormControl
             placeholder="Product name"
