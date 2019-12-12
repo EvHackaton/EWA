@@ -35,7 +35,10 @@ const Demo = () => {
             axios(
               `https://ewa20191211060235.azurewebsites.net/api/barcode/${parsedBarCode}`,
             ).then(
-                response => setQueryResult(response.data),
+                response => {
+                  setQueryResult(response.data);
+                  setIsError(false);
+                },
                 error => setIsError(true),
             );
           }}
