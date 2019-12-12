@@ -33,7 +33,7 @@ const Demo = () => {
             const parsedBarCode = scanResult.barcodes[0].data;
             setBarCode(parsedBarCode);
             axios(
-              `https://ewaevhackaton.azurewebsites.net/api/barcode/${parsedBarCode}`,
+              `https://ewa20191211060235.azurewebsites.net/api/barcode/${parsedBarCode}`,
             ).then(
                 response => setQueryResult(response.data),
                 error => setIsError(true),
