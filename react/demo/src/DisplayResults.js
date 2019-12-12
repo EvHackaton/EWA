@@ -60,8 +60,8 @@ export const DisplayResults = ({ barCode, queryResult, isError }) => {
             <div className="ProductHead">
               <img src={`https://ewa20191211060235.azurewebsites.net/products/${barCode}.jpg`} />
               <div className="ProductName">
-                <p>{name}</p>
-                <p>Barcode number: {barCode}</p>
+                <p className="ProductActualName">{name}</p>
+                <p className="ProductBarcode">Barcode number: {barCode}</p>
               </div>
             </div>
             <div className="List">
