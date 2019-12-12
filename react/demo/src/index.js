@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import { render } from "react-dom";
 import axios from 'axios';
 import { ScanSettings, Barcode } from "scandit-sdk";
-import { Button, ButtonToolbar } from 'react-bootstrap';
+import { Button, ButtonToolbar, InputGroup, FormControl } from 'react-bootstrap';
 
 import BarcodePicker from "../../src";
 import { DisplayResults } from './DisplayResults';
@@ -14,11 +14,45 @@ const Demo = () => {
   const [queryResult, setQueryResult] = useState(null);
   const [isError, setIsError] = useState(false);
 
+  const handleSearch = event => {
+    const searchText = event.target.form[0].value;
+
+    //https://ewa20191211060235.azurewebsites.net/api/name/milk
+
+    axios(
+      `https://ewa20191211060235.azurewebsites.net/api/name/${searchText}`,
+    ).then(
+        response => {
+          setBarCode(response.data.code);
+          setQueryResult(response.data)
+          setIsError(false);
+        },
+        error => setIsError(true),
+    );
+  };
+
   return (
     <div className="Container">
       <div className="Header">
         <img className="Ewa" src={ewaLogo} />
       </div>
+      <form>
+        <InputGroup className="mb-3">
+          <FormControl
+            placeholder="Product name"
+            aria-label="Product name"
+          />
+          <InputGroup.Append>
+            <Button
+              className="ActionButton"
+              onClick={handleSearch}
+              variant="outline-secondary"
+            >
+              Search
+            </Button>
+          </InputGroup.Append>
+        </InputGroup>
+      </form>
       {!barCode && (
         <BarcodePicker
           playSoundOnScan={true}
@@ -58,7 +92,7 @@ const Demo = () => {
         <ButtonToolbar>
           {isError && (
             <Button
-              className="ActionButton"
+              className="ActionButtonBig"
               variant="primary"
               size="lg"
             >
@@ -66,7 +100,7 @@ const Demo = () => {
             </Button>
           )}
           <Button
-            className="ActionButton"
+            className="ActionButtonBig"
             variant="primary"
             size="lg"
             onClick={() => setBarCode('')}
