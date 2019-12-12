@@ -1,4 +1,4 @@
-﻿{
+{
   "Product": [
     {
       "idProduct":"1",
@@ -57,7 +57,7 @@
     },
     {
       "idProduct":"6",
-      "productName":"glade freshener",
+      "productName":"Glade freshener",
       "productCode":"5000204625271",
       "Id_Instruction0":"2",
       "Id_Instruction1":"5",
@@ -68,7 +68,7 @@
     },
     {
       "idProduct":"7",
-      "productName":"ryet led 400 lm",
+      "productName":"Ryet led 400 lm",
       "productCode":"90305742199729",
       "Id_Instruction0":"1",
       "Id_Instruction1":"29",
@@ -79,7 +79,7 @@
     },
     {
       "idProduct":"8",
-      "productName":"olio di sansa di oliva",
+      "productName":"Olio di sansa di oliva",
       "productCode":"8008460223139",
       "Id_Instruction0":"3",
       "Id_Instruction1":"7",
@@ -90,7 +90,7 @@
     },
     {
       "idProduct":"9",
-      "productName":"frosch cleaner",
+      "productName":"Frosch cleaner",
       "productCode":"4009175170811",
       "Id_Instruction0":"2",
       "Id_Instruction1":"4",
@@ -101,7 +101,7 @@
     },
     {
       "idProduct":"10",
-      "productName":"fruit infusion with raspberry",
+      "productName":"Fruit infusion with raspberry",
       "productCode":"5901483081003",
       "Id_Instruction0":"15",
       "Id_Instruction1":"6",
@@ -112,7 +112,7 @@
     },
     {
       "idProduct":"11",
-      "productName":"dilmah tea cardboard",
+      "productName":"Dilmah tea cardboard",
       "productCode":"9312631123265",
       "Id_Instruction0":"1",
       "Id_Instruction1":"6",
@@ -123,7 +123,7 @@
     },
     {
       "idProduct":"12",
-      "productName":"black peper",
+      "productName":"Black peper",
       "productCode":"5901032041113",
       "Id_Instruction0":"21",
       "Id_Instruction1":"2",
@@ -134,7 +134,7 @@
     },
     {
       "idProduct":"13",
-      "productName":"nestle caro original",
+      "productName":"Nestle caro original",
       "productCode":"4005500064176",
       "Id_Instruction0":"1",
       "Id_Instruction1":"2",
@@ -145,7 +145,7 @@
     },
     {
       "idProduct":"14",
-      "productName":"microfibre cloth",
+      "productName":"Microfibre cloth",
       "productCode":"5900536284224",
       "Id_Instruction0":"6",
       "Id_Instruction1":"18",
@@ -156,7 +156,7 @@
     },
     {
       "idProduct":"15",
-      "productName":"frosch dishwashing lotion",
+      "productName":"Frosch dishwashing lotion",
       "productCode":"4009175148117",
       "Id_Instruction0":"2",
       "Id_Instruction1":"4",
@@ -167,11 +167,11 @@
     },
     {
       "idProduct":"16",
-      "productName":"lipton green tea cardboard",
+      "productName":"Lipton green tea cardboard",
       "productCode":"8712100784620",
       "Id_Instruction0":"1",
-      "Id_Instruction1":"25",
-      "Id_Instruction2":"5",
+      "Id_Instruction1":"8",
+      "Id_Instruction2":"15",
       "Id_Instruction3":"",
       "Id_Instruction4":"",
       "Id_Instruction5":""

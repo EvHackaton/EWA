@@ -3,6 +3,7 @@
   <PropertyGroup>
     <NameOfLastUsedPublishProfile>EWA20191211060235 - Web Deploy</NameOfLastUsedPublishProfile>
     <ActiveDebugProfile>EWA</ActiveDebugProfile>
+    <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
