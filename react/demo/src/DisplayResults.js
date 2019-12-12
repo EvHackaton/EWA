@@ -16,6 +16,8 @@ import Other from './images/other.png';
 import Paper from './images/paper.png';
 import Tire from './images/tire.png';
 
+import Unknown from './images/notFound.png';
+
 const CategoryIcon = ({ categoryIcon }) => {
   const imagesMapping = {
     'batteries': Batteries,
@@ -43,7 +45,12 @@ const CategoryIcon = ({ categoryIcon }) => {
 
 export const DisplayResults = ({ barCode, queryResult, isError }) => {
   if (!queryResult) return <div>Waiting for response...</div>
-  if (isError) return <div>Product unknown...</div>
+  if (isError) return (
+    <Fragment>
+      <p className="UnknownName">Product unknown...</p>
+      <img className="UnknownImage" src={Unknown} />
+    </Fragment>
+  );
   else {
     const { name, instructions } = queryResult;
     return (

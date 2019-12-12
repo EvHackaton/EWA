@@ -57,6 +57,15 @@ const Demo = () => {
       )}
       {barCode && (
         <ButtonToolbar>
+          {isError && (
+            <Button
+              className="ActionButton"
+              variant="primary"
+              size="lg"
+            >
+              Add
+            </Button>
+          )}
           <Button
             className="ActionButton"
             variant="primary"
