@@ -1,0 +1,4 @@
+/**
+ * UnsupportedBrowserError tests
+ */
+export {};
